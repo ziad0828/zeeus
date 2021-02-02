@@ -1,7 +1,7 @@
 --[[
 ▀█████████▄           ██       ████████
 ██▀ │ajex ﹏ @ZU_XU
-│تم تطوير وبرمجة السورس من قبل زيوس 
+│تم تطوير وبرمجة السورس من قبل زيوس .
 │@ZU_XU
 #-------------------------------------------------------------------
 ]]
@@ -102,7 +102,7 @@ Cr_file = io.open("./inc/Token.txt", "w")
 Cr_file:write(Token)
 Cr_file:close() 
 print('\27[1;36m￤Token.txt is created.\27[m')
-local Text = "⌯ أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n⌯ شكراً لأستخدام سورس ثور \n⌯ أرسل /start\n⌯ لأظهار الاوامر المطور  المجهزه بالكيبورد\n\n."
+local Text = "⌯ أهلاً [المطور الاساسي](tg://user?id="..SUDO_USER..") \n⌯ شكراً لأستخدام سورس ثْوُرٖ \n⌯ أرسل /start\n⌯ لأظهار الاوامر المطور  المجهزه بالكيبورد\n\n."
 https.request(Api_Token..'/sendMessage?chat_id='..SUDO_USER..'&text='..URL.escape(Text)..'&parse_mode=Markdown')
 os.execute([[
 rm -f ./README.md
@@ -123,7 +123,7 @@ print('\27[0;33m>>'..[[
 
   ███    ███ ███          ██               ██             ██                   ██        ██▄████████▀ │ajex ﹏ @UU_IV
 │
-تم تطوير وبرمجة السورس من قبل زيوس
+تم تطوير وبرمجة السورس من قبل زيوس ™«
 │@ZU_XU
 -------------------------------------------------------------------
 ]]..'\027[0;32m')
@@ -157,7 +157,7 @@ print('\27[0;33m>>'..[[
 ▀
 ▄█████████▀           ██               ██             ██                    ██▄████████▀ │ajex ﹏ @UU_IV
 │
-تم تطوير وبرمجة السورس من قبل زيوس
+تم تطوير وبرمجة السورس من قبل زيوس ™.
 │@ZU_XU
 -------------------------------------------------------------------
                                                   
@@ -244,8 +244,9 @@ msg.TheRank =  'مطور السورس'
 msg.Rank = 1
 
 elseif msg.sender_user_id_ == 1276023652 then 
-msg.TheRank =  'مطور السورس'
+msg.TheRank =  ' مطور السورس '
 msg.Rank = 1
+
 elseif msg.sender_user_id_ == SUDO_ID then 
 msg.TheRankCmd = 'المطور' 
 msg.TheRank = 'مطور اساسي' 
@@ -334,7 +335,7 @@ SUDO_USER = redis:hgetall(ajex..'username:'..SUDO_ID).username
 sendPhoto(msg.chat_id_,msg.id_,redis:get(ajex..':WELCOME_BOT'),[[⌯ مرحباً انا بوت ]]..redis:get(ajex..':NameBot:')..[[ .
 ⌯ اختـصاصـي حمايـة الـمجموعات
 ⌯ تأكد من رفعـك للبـوت مشـرف في مجموعـتك واكتب تفعـيل 
-⌯ قنـاة سورس ثور @ZU_XU
+⌯ قنـاة سورس ثور ⇐ @diva_Cy
 . مـعرف المطور  :]]..SUDO_USER:gsub([[\_]],'_')..[[ .
 ]])
 return false
@@ -636,7 +637,6 @@ download(stk,32)
 	end
 	end
 	end
-
 	if redis:get(ajex..'mute_tgservice'..msg.chat_id_) then
 	Del_msg(msg.chat_id_,msg.id_)
 	end
